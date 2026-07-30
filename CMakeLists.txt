@@ -24,7 +24,7 @@ configure_file(
 )
 
 add_library(observatory_core STATIC
-    collector/cli/command_line.cpp
+    src/cli/command_line.cpp
 )
 
 target_include_directories(observatory_core
@@ -38,7 +38,7 @@ observatory_apply_warnings(observatory_core)
 observatory_apply_static_analysis(observatory_core)
 
 add_executable(observatory
-    collector/cli/main.cpp
+    src/cli/main.cpp
 )
 
 target_link_libraries(observatory

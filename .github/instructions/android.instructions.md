@@ -1,5 +1,5 @@
 ---
-applyTo: "ebpf/platform/android/**,collector/platform/android/**,analytics/platform/android/**"
+applyTo: "ebpf/platform/android/**,src/platform/android/**"
 ---
 
 # Android Platform Instructions

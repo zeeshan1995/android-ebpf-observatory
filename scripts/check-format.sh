@@ -4,7 +4,7 @@ set -eu
 repo_root=$(git rev-parse --show-toplevel)
 
 find \
-    "$repo_root/collector" \
+    "$repo_root/src" \
     "$repo_root/include" \
     "$repo_root/tests" \
     -type f \

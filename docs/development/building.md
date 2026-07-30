@@ -45,3 +45,10 @@ pipeline:
 
 Capability discovery and BPF loading are introduced in subsequent vertical
 slices rather than hidden behind placeholder abstractions.
+
+## Source Layout
+
+- `src/` contains C++ implementation files.
+- `include/observatory/` contains public C++ headers.
+- `ebpf/` contains kernel BPF C programs.
+- `tests/` mirrors behavior through unit, integration, and workload tests.

@@ -7,7 +7,7 @@ Checks: >
   portability-*,
   readability-*
 WarningsAsErrors: ''
-HeaderFilterRegex: '^(collector|include|tests)/'
+HeaderFilterRegex: '^(src|include|tests)/'
 CheckOptions:
   readability-identifier-length.IgnoredVariableNames: '^(i|j|k|fd)$'
   readability-magic-numbers.IgnoredIntegerValues: '0;1;2'

@@ -63,7 +63,8 @@ production mindset.
 ## Change Workflow
 
 1. Identify the design phase and owning architectural layer.
-2. Read the relevant design and module documentation.
+2. Read `docs/implementation-plan.md` and the relevant architecture and
+   module documentation.
 3. Record capability assumptions and expected unsupported behavior.
 4. Implement the smallest complete vertical slice: probe, event schema,
    collector handling, storage/query path, and focused tests.
@@ -96,6 +97,8 @@ production mindset.
 ## Agent Behavior
 
 - Keep tasks scoped to one coherent deliverable and one design phase.
+- Complete the Linux Engine Complete Gate before implementing Android
+  phases unless the task is research that does not alter production code.
 - Parallelize independent research, implementation, and validation work.
 - Do not combine unrelated subsystem changes in one pull request.
 - State uncertainty explicitly and preserve unsupported states.

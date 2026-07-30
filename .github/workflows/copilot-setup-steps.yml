@@ -1,0 +1,50 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Install Linux eBPF toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            bpftool \
+            clang \
+            clang-format \
+            clang-tidy \
+            cmake \
+            g++ \
+            gcc \
+            libbpf-dev \
+            libelf-dev \
+            llvm \
+            make \
+            ninja-build \
+            pkg-config \
+            zlib1g-dev
+
+      - name: Report toolchain
+        run: |
+          clang --version
+          clang++ --version
+          clang-format --version
+          clang-tidy --version
+          cmake --version
+          bpftool version
+          pkg-config --modversion libbpf

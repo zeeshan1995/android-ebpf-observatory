@@ -6,6 +6,8 @@ All agents working in this repository must follow
 
 Use `docs/agentic-workflow.md` for task decomposition, agent roles,
 parallel work, pull-request boundaries, and completion criteria.
+Use `docs/implementation-plan.md` as the canonical phase order and
+architecture plan.
 
 Before implementation:
 

@@ -18,6 +18,9 @@ should normally include:
 6. Accuracy, loss, overhead, compatibility, and limitations.
 
 Avoid assigning an entire subsystem or multiple phases as one task.
+Phase order and entry/exit gates are defined in
+`docs/implementation-plan.md`. Production Android implementation begins
+only after the Linux Engine Complete Gate.
 
 ## Agent Roles
 

@@ -1,5 +1,5 @@
 ---
-applyTo: "src/**,include/observatory/**"
+applyTo: "src/**"
 ---
 
 # Userspace Instructions

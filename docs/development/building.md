@@ -49,6 +49,6 @@ slices rather than hidden behind placeholder abstractions.
 ## Source Layout
 
 - `src/` contains C++ implementation files.
-- `include/observatory/` contains public C++ headers.
+- C++ headers are colocated with their implementation under `src/`.
 - `ebpf/` contains kernel BPF C programs.
 - `tests/` mirrors behavior through unit, integration, and workload tests.

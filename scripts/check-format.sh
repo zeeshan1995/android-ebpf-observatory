@@ -5,7 +5,6 @@ repo_root=$(git rev-parse --show-toplevel)
 
 find \
     "$repo_root/src" \
-    "$repo_root/include" \
     "$repo_root/tests" \
     -type f \
     \( -name '*.c' -o -name '*.cc' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' \) \

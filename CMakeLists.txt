@@ -18,8 +18,8 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBBPF REQUIRED IMPORTED_TARGET libbpf>=1.0)
 
 configure_file(
-    include/observatory/core/version.hpp.in
-    generated/observatory/core/version.hpp
+    src/core/version.hpp.in
+    generated/core/version.hpp
     @ONLY
 )
 
@@ -29,7 +29,7 @@ add_library(observatory_core STATIC
 
 target_include_directories(observatory_core
     PUBLIC
-        "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+        "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/generated>"
 )
 

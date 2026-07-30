@@ -1,4 +1,4 @@
-#include "observatory/cli/command_line.hpp"
+#include "cli/command_line.hpp"
 
 #include <array>
 #include <cstdlib>

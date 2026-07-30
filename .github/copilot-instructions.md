@@ -33,7 +33,7 @@ production mindset.
   adapters.
 - `src/storage/`: event sink implementations.
 - `src/cli/`: command-line client and commands.
-- `include/observatory/`: public C++ interfaces.
+- C++ headers are colocated with their implementation under `src/`.
 
 ## Implementation Rules
 

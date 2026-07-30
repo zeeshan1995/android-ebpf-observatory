@@ -1,5 +1,5 @@
-#include "observatory/cli/command_line.hpp"
-#include "observatory/core/version.hpp"
+#include "cli/command_line.hpp"
+#include "core/version.hpp"
 
 #include <exception>
 #include <iostream>

@@ -24,7 +24,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends \
-            bpftool \
             clang \
             clang-format \
             clang-tidy \
@@ -44,5 +43,4 @@ jobs:
           clang-format --version
           clang-tidy --version
           cmake --version
-          bpftool version
           pkg-config --modversion libbpf

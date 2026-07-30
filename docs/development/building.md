@@ -5,12 +5,17 @@
 The primary userspace toolchain is:
 
 - Clang/LLVM
-- bpftool
 - ISO C++20 with compiler extensions disabled
 - CMake 3.24 or newer
 - Ninja
 - libbpf 1.0 or newer
 - libelf, zlib, and pkg-config
+
+`bpftool` is intentionally not installed through Ubuntu's virtual
+`bpftool` package in CI because the GitHub runner image currently has no
+installable binary provider. The first BPF program slice will add a pinned,
+reproducible bpftool source or artifact instead of relying on the runner's
+kernel-package layout.
 
 The project intentionally requires Clang by default so Linux userspace and
 future Android NDK code share the same compiler family. A secondary GCC

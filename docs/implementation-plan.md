@@ -21,6 +21,10 @@ The Linux engine is completed and validated first because:
 - Android then becomes a real platform adapter instead of being mixed into
   the collection core.
 
+The implementation is paired with the independent study track in
+[`learning-roadmap.md`](learning-roadmap.md), using *Learning eBPF* as a
+companion resource.
+
 This ordering does not require every future Linux feature to be completed
 before Android begins. It requires the version 1 Linux engine defined by
 the **Linux Engine Complete Gate** to be complete.

@@ -1,5 +1,5 @@
 ---
-applyTo: "collector/**,analytics/**,storage/**"
+applyTo: "src/**"
 ---
 
 # Userspace Instructions

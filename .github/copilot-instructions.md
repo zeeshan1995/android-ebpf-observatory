@@ -27,11 +27,13 @@ production mindset.
 - `ebpf/linux/`: platform-neutral process, scheduler, network, VFS, and
   block IO programs.
 - `ebpf/platform/android/`: Binder, input, graphics, and Android uprobes.
-- `collector/core/`: loading, transport, clocks, schemas, and lifecycle.
-- `collector/platform/android/`: Android identity and metadata enrichment.
-- `analytics/core/`: platform-neutral correlation and resource models.
-- `analytics/platform/android/`: Android activity and foreground inference.
-- `storage/`: event sink contracts and implementations.
+- `src/collector/`: loading, transport, clocks, schemas, and lifecycle.
+- `src/platform/android/`: Android identity and metadata enrichment.
+- `src/analytics/`: platform-neutral correlation and Android inference
+  adapters.
+- `src/storage/`: event sink implementations.
+- `src/cli/`: command-line client and commands.
+- C++ headers are colocated with their implementation under `src/`.
 
 ## Implementation Rules
 

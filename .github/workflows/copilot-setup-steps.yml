@@ -29,8 +29,6 @@ jobs:
             clang-format \
             clang-tidy \
             cmake \
-            g++ \
-            gcc \
             libbpf-dev \
             libelf-dev \
             llvm \

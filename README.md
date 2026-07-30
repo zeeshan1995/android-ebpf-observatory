@@ -15,3 +15,15 @@ See:
 - [Implementation plan](docs/implementation-plan.md)
 - [Architecture entry point](docs/architecture/README.md)
 - [Agentic development workflow](docs/agentic-workflow.md)
+- [Build instructions](docs/development/building.md)
+- [Learning roadmap](docs/learning-roadmap.md)
+
+## Build
+
+The primary toolchain is Clang/LLVM with ISO C++20 and libbpf:
+
+```sh
+cmake --preset dev
+cmake --build --preset dev
+ctest --preset dev
+```

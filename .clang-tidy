@@ -7,7 +7,7 @@ Checks: >
   portability-*,
   readability-*
 WarningsAsErrors: ''
-HeaderFilterRegex: '^(src|tests)/'
+HeaderFilterRegex: '.*/(src|tests|ebpf)/.*'
 CheckOptions:
   readability-identifier-length.IgnoredVariableNames: '^(i|j|k|fd)$'
   readability-magic-numbers.IgnoredIntegerValues: '0;1;2'
